@@ -29,7 +29,7 @@ test('assertions',async({page}) =>{
     await page.waitForTimeout(5000)
 
     // to close page
-    // await page.close()
+    await page.close()
 
 
 })
