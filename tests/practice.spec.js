@@ -23,10 +23,10 @@ test('verify confirm', async ({page})=>{
 
         expect(dialog.type()).toContain('confirm')
         expect(dialog.message()).toContain('Hello , Are you sure you want to confirm?')
-        await dialog.accept()
-        // await dialog.dismiss()
+        // await dialog.accept()
+         await dialog.dismiss()
       })
 
       await page.locator('#confirmbtn').click()
-      await page.waitForTimeout(5000)
+      await page.close()
 })
